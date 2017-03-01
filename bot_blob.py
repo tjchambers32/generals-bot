@@ -1,8 +1,8 @@
 '''
-	@ Harris Christiansen (Harris@HarrisChristiansen.com)
-	January 2016
-	Generals.io Automated Client - https://github.com/harrischristiansen/generals-bot
-	Bot_blob: Creates a blob of troops.
+	@ Travis Chambers 
+	March 2016
+	Generals.io Automated Client - https://github.com/tjchambers32/generals-bot
+	Blob bot: Creates a blob of troops.
 '''
 
 import logging
@@ -79,6 +79,6 @@ def move_toward():
 ######################### Main #########################
 
 # Start Game
-bot_base.GeneralsBot(make_move, name="[Bot]KingTrav", gameType="private", privateRoomID="KingTrav") # Private Game - http://generals.io/games/HyI4d3_rl
-#bot_base.GeneralsBot(make_move, name="PurdueBot-B", gameType="1v1")
-#bot_base.GeneralsBot(make_move, name="PurdueBot-B", gameType="ffa")
+bot_base.GeneralsBot(make_move, name="[Bot]KingTrav", gameType="private", privateRoomID="KingTrav") # Private Game - http://generals.io/games/KingTrav
+#bot_base.GeneralsBot(make_move, name="[Bot]KingTrav", gameType="1v1")
+#bot_base.GeneralsBot(make_move, name="[Bot]KingTrav", gameType="ffa")
