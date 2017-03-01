@@ -126,9 +126,9 @@ class GeneralsViewer(object):
 				pos_top = (CELL_MARGIN + CELL_HEIGHT) * row + CELL_MARGIN
 				if (tile in self._map.cities or tile in self._map.generals): # City/General
 					# Draw Circle
-					pos_left_circle = pos_left + (CELL_WIDTH/2)
-					pos_top_circle = pos_top + (CELL_HEIGHT/2)
-					pygame.draw.circle(self._screen, color, [pos_left_circle, pos_top_circle], CELL_WIDTH/2)
+					pos_left_circle = int(pos_left + (CELL_WIDTH/2))
+					pos_top_circle = int(pos_top + (CELL_HEIGHT/2))
+					pygame.draw.circle(self._screen, color, [pos_left_circle, pos_top_circle], int(CELL_WIDTH/2))
 				else:
 					# Draw Rect
 					pygame.draw.rect(self._screen, color, [pos_left, pos_top, CELL_WIDTH, CELL_HEIGHT])
