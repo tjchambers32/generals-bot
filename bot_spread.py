@@ -21,11 +21,11 @@ def make_move(currentBot, currentMap):
 	_bot = currentBot
 	_map = currentMap
 
-	move_outward()
+	make_primary_move()
 
 def make_primary_move():
-	if not move_toward():
-		move_outward()
+	if not move_outward():
+		move_toward()
 
 ######################### Move Outward #########################
 
